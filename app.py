@@ -32,6 +32,7 @@ app.title = "Mortalidad Colombia 2019"
 server = app.server  # Exponer el objeto WSGI para gunicorn
 
 DF_FULL = build_full_dataset()
+print("df_full shape:", DF_FULL.shape)
 DATA_DIR = Path(__file__).resolve().parent / "data"
 GEOJSON_PATH = DATA_DIR / "colombia_departamentos.geojson"
 GEOJSON_DATA = json.loads(GEOJSON_PATH.read_text())
