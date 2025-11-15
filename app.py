@@ -105,7 +105,7 @@ def card_block(title: str, children):
 
 app.layout = dbc.Container(
     [
-        html.H1("Mortalidad en Colombia 2019 – Aplicación Interactiva", className="mb-2"),
+        html.H1("Mortalidad en Colombia 2019 – Daniel Leyton", className="mb-2"),
         html.P(
             "Explora la mortalidad no fetal de 2019 por departamento, sexo, edad y causa de muerte.",
             className="lead mb-4",
