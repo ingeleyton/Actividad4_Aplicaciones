@@ -73,7 +73,7 @@ make run       # python app.py
 make serve     # gunicorn app:server
 ```
 
-La app quedará disponible en `XXXXXXXXXXXXX`. El layout incluye:
+La app quedará disponible en `https://mortalidad-app-326684895868.us-central1.run.app/`. El layout incluye:
 
 - Panel de filtros globales (sexo, departamento, categoría de edad).
 - Mapa interactivo por departamento con filtro adicional por manera de muerte.
