@@ -275,6 +275,7 @@ app.layout = dbc.Container(
     Input("manera-filter", "value"),
 )
 def update_dashboard(sexo, departamento, categoria_edad, manera):
+    print("Callback filters:", sexo, departamento, categoria_edad, manera)
     mapa_df = get_mapa_departamentos(DF_FULL, sexo, departamento, categoria_edad, manera)
     mapa_df["geo_id"] = mapa_df["DEPARTAMENTO"].apply(_department_to_geo_id)
     mapa_df = mapa_df.dropna(subset=["geo_id"])
